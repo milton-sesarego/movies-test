@@ -12,7 +12,7 @@ jobs:
 
       - name: Create API key file
         run: |
-          echo "const API_KEY = '${{ secrets.TOKEN }}';" > ./api_key.js
+          echo "const ACCESS_TOKEN = '${{ secrets.ACCESS_TOKEN }}';" > ./api_key.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
