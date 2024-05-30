@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Películas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="api_key.js"></script>
+    <!-- Include the API key script -->
+  </head>
+  <body>
+    <header>
+      <h1>Aplicación de Películas</h1>
+    </header>
+    <main>
+      <div id="movies-list">
+        <section id="random-movies">
+          <h2>Películas Aleatorias</h2>
+          <div id="random-movies-list"></div>
+        </section>
+        <section id="search-movies">
+          <form id="search-form">
+            <h2>Buscar Películas</h2>
+            <input
+              type="text"
+              id="search-box"
+              placeholder="Buscar por título..."
+            />
+            <input type="submit" id="submit-button" />
+          </form>
+          <div id="search-results"></div>
+        </section>
+      </div>
+      <section id="movie-details" class="hidden">
+        <button class="button back-button" onclick="goBack()">Back</button>
+        <h2>Detalles de la Película</h2>
+        <div id="movie-detail"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
